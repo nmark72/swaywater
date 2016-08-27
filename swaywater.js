@@ -17,13 +17,38 @@ tekstOpisa = $('<p></p>'),
 ukusi= $('<selection></selection>'),
 scroll=0,
 sirina=Number($(window).width());;
+var p0 = ["p0",30.3095, -97.93937, "Bee Cave Coffee Co.", "<strong>Bee Cave Coffee Co.</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/cBdxQXPvk1R2' target='_blank'>Directions</a>"],
+	p1 = ["p1",30.38707, -97.70366, "Bee Cave Coffee Co. Domain", "<strong>Bee Cave Coffee Co. Domain</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/V2fBw8iUu4G2' target='_blank'>Directions</a>"],
+    p2 = ["p2",30.307743, -97.739877, "Central Market Austin North Lamar", "<strong>Central Market Austin North Lamar</strong><br><a href='http://centralmarket.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/3Wdp74k23Nv' target='_blank'>Directions</a>"],
+    p3 = ["p3",30.231948, -97.796914, "Central Market Austin Westgate", "<strong>Central Market Austin Westgate</strong><br><a href='http://centralmarket.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/VspTG1Atvmy' target='_blank'>Directions</a>"];
+
+     var yTop= $("#tekstPosleUkusa").offset().top;
+	 var yBot= $("#kontakt").offset().top;
+	 var rTop = (yBot + yTop)/2;
+	 var gmid =(rTop+yBot)/2;
+	 var krajDoc =$('#kraj').offset().bottom;
+	 var r=255,g=255,b=255;
+	 document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+$("nav ul li a[href^='#']").on('click', function(e) 
+{
+   e.preventDefault();
+   var hash = this.hash;
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 600,"swing", function(){
+       window.location.hash = hash;
+     });
+});
+
+
 
 if (scroll < 450)
 {$("#pocetnaTekst").addClass('nevidljiv');}
 
 $(window).scroll(function (event) {
  scroll = Number($(window).scrollTop());
- console.log(scroll);
+ //console.log(scroll);
 
  /*---pocetnaSlikaFiksnaRelativna---*/
 
@@ -66,19 +91,121 @@ else
 
 /*----------------------------------------*/
 
-if (scroll > 5214 && scroll < 10365)
+
+     yTop= $("#tekstPosleUkusa").offset().top;
+	 yBot= $("#kontakt").offset().top;
+/*----------------Blue------------------------*/  
+    if (scroll > yTop && scroll < yBot)
 {
 
-	var con=Math.floor(scroll/5214);
-	console.log("con ="+con);
+	 b =(bluecolor(scroll));
+
+
+
+	//console.log("b= "+b);
+
+	
+}
+else
+{
+	b=255;
+}
+/*--------------------Red---------------------------*/
+	rTop = (yBot + yTop)/2
+
+    if (scroll > rTop && scroll < yBot)
+{
+
+	 r =(redcolor(scroll));
+
+
+
+	//console.log("r= "+r);
+
+	
+}
+else
+{
+	r=255;
+}
+/*--------------------Green--------------------------*/
+
+	rTop = (yBot + yTop)/2
+	gmid =(rTop+yBot)/2;
+
+    if ((scroll > yTop && scroll < rTop))
+{
+
+	 g =(greencolor1(scroll));
+
+
+
+	//console.log("g= "+g);
+
+	
+}
+else
+	if (scroll >gmid && scroll < yBot)
+	{
+		g =(greencolor2(scroll));
+		//console.log("g= "+g);
+	}
+	else if (scroll >rTop && scroll < gmid)
+	{
+		g = 245;
+		//console.log("g= "+g);
+	}
+
+
+	else
+
+{
+	g=255;
 }
 
+/*---------------------BojaPozadine----------------------------*/
 
-
+document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 
 /*------------------------------------*/
 
 });
+
+ function bluecolor(scrol)
+ {	
+	var mid =(yTop+yBot)/2;
+	var kol =((yBot-yTop)/136)
+ 	var blue =187+Math.abs((Math.floor((mid-scrol)/kol)));
+ 	return blue;
+ }
+
+ function redcolor(scrol)
+ {
+ 	rTop = (yBot + yTop)/2
+ 	var mid =(rTop+yBot)/2;
+	var kol =((yBot-rTop)/69)
+ 	var red =220+Math.abs((Math.floor((mid-scrol)/kol)));
+ 	return red;
+ }
+
+ function greencolor1(scrol)
+ {
+	var mid =(yTop+yBot)/2;
+	var kol =((yBot-yTop)/20)
+ 	var green =245+Math.abs((Math.floor((mid-scrol)/kol)));
+ 	return green;
+ }
+
+ function greencolor2(scrol)
+ {
+ 	rTop = (yBot + yTop)/2
+ 	var mid =(rTop+yBot)/2;
+	var kol =((yBot-rTop)/20)
+ 	var green =245+Math.abs((Math.floor((mid-scrol)/kol)));
+ 	return green;
+ }
+
+
 
 $('#navUl_mobile').addClass('displayNone');
 
@@ -109,6 +236,7 @@ else
 
 {
 	$('#nav_mobile').addClass('displayNone');
+	$('#navUl_mobile').addClass('displayNone');
 	$('#navUl').removeClass('displayNone');
 	$('.nav_bar').removeClass('widthFull');
 }
@@ -158,10 +286,7 @@ $(document).ready(function(){
 
 /*-------------mapa------------------*/
 
-var p0 = ["p0",30.3095, -97.93937, "Bee Cave Coffee Co.", "<strong>Bee Cave Coffee Co.</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/cBdxQXPvk1R2' target='_blank'>Directions</a>"],
-	p1 = ["p1",30.38707, -97.70366, "Bee Cave Coffee Co. Domain", "<strong>Bee Cave Coffee Co. Domain</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/V2fBw8iUu4G2' target='_blank'>Directions</a>"],
-    p2 = ["p2",30.307743, -97.739877, "Central Market Austin North Lamar", "<strong>Central Market Austin North Lamar</strong><br><a href='http://centralmarket.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/3Wdp74k23Nv' target='_blank'>Directions</a>"],
-    p3 = ["p3",30.231948, -97.796914, "Central Market Austin Westgate", "<strong>Central Market Austin Westgate</strong><br><a href='http://centralmarket.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/VspTG1Atvmy' target='_blank'>Directions</a>"];
+
 
 
   var iniTacka=new google.maps.LatLng(30.3595, -97.98937);
@@ -174,26 +299,29 @@ var p0 = ["p0",30.3095, -97.93937, "Bee Cave Coffee Co.", "<strong>Bee Cave Coff
   var map=new google.maps.Map(document.getElementById("mapa"),mapInit);
 
   function markerInfo (param)
-		{ 	console.log(param);
+		{ 	
+			
+			var pr=[];
+			pr = eval(param);
   			var infos={};
   			var markeri={};
-  			var LLng = new google.maps.LatLng(param[1],param[2]);
-  			markeri["marker"+param[0]] = new google.maps.Marker
+  			var LLng = new google.maps.LatLng(pr[1],pr[2]);
+  			markeri["marker"+pr[0]] = new google.maps.Marker
   				({
   					position: LLng,
-  					title: param[3
-  					],
+  					title: pr[3],
+  					
   					map: map
  				});
   
-  			markeri["marker"+param[0]].setMap(map);
+  			markeri["marker"+pr[0]].setMap(map);
 
-  			infos["infow"+param[0]] = new google.maps.InfoWindow
+  			infos["infow"+pr[0]] = new google.maps.InfoWindow
   				({
-    				content: param[4]
+    				content: pr[4]
   				});
 
-  			infos["infow"+param[0]].open(map, markeri["marker"+param[0]]);
+  			infos["infow"+pr[0]].open(map, markeri["marker"+pr[0]]);
 
 		}
 

@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 @font-face {
     font-family: "FontAwesome";
-    src: url(..\font\font-awesome-4.6.3\fonts\fontawesome-webfont.ttf);
+    src: url(file:///C:\Users\nikol_000\Desktop\swaywater\font\font-awesome-4.6.3\fonts\Fontawesome-webfont.ttf);
 }
 
 
@@ -874,7 +874,7 @@ section h2
   text-align: center;
   display:block;  
 }
-.mapContainer
+.mapaContainer
 {
     width:100%;
     height: 80vh;
@@ -890,7 +890,7 @@ section h2
     font-size: 19px;
 }
 
-#map-canvas {
+#mapa {
     width:100%;
     height:80vh;
 }
