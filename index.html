@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+<head>
+	<title>Sway Water</title>
+	<link rel="stylesheet" type="text/css" href="swaywater.css">
+	<script src="jquery-3.1.0.min.js"></script>
+	
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMpLDBQHbtjOmfWtGu9POzaqfLcRHTlSc"></script>
+ 	<script src="https://use.fontawesome.com/63212357f7.js"></script>
+	
+</head>
+<body>
+
+<header>
+
+<div class="start">
+<div class="zavesa"></div>
+<div class="logo"></div>
+<div class="pocetnaSlika">
+	<h1 id="pocetnaTekst">Water for the senses</h1>
+</div>
+</div>
+
+<nav  class="nav_bar"> 
+            <ul id="navUl">
+                <li class="nav1"><a href="#opis">Sway</a></li>
+                <li class="nav2"><a href="#ukusi">Flavors</a></li>
+                <li class="nav3"><a href="#proces">Process</a></li>
+                <li class="nav4"><a href="#story">About</a></li>
+                <li class="nav5"><a href="#lokacije">Locations</a></li>
+                <li class="nav6"><a href="#kontakt">Contact</a></li>
+                <li class="nav7"><a href="https://squareup.com/market/swaywater" target="_blank">Shop</a></li>
+            </ul>
+
+            <div id="nav_mobile">
+            	<div id="mobile_logo"></div>
+            	<div id="nav_mobile_menu_icon">
+            	<span class="mobile_menu">Menu</span>
+            	<span class="mobile_icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            	</div>
+            </div>
+
+            <ul id="navUl_mobile">
+                <li class="nav1"><a href="#opis">Sway</a></li>
+                <li class="nav2"><a href="#ukusi">Flavors</a></li>
+                <li class="nav3"><a href="#proces">Process</a></li>
+                <li class="nav4"><a href="#story">About</a></li>
+                <li class="nav5"><a href="#lokacije">Locations</a></li>
+                <li class="nav6"><a href="#kontakt">Contact</a></li>
+                <li class="nav7"><a href="https://squareup.com/market/swaywater" target="_blank">Shop</a></li>
+            </ul>
+        </nav>
+	
+
+</header>
+
+<div class="talasLimun">
+	
+<div  id="talas">
+	<img src="img/waves.svg" id="talasSL" class="rotacija">
+</div>
+
+<div  id="limun" >
+	<img src="img/lemon.svg" class="rotacija">
+</div>
+
+</div>
+
+<section id="opis">
+
+<h2 class="naslovOpisa">What is Sway</h2>
+<p class="tekstOpisa">A simple solution to sugary, synthetic drinks. Real, organic fruit, infused with purified water resulting in a completely natural and refreshing beverage. Bottled right here in Austin, Texas.</p>
+	
+</section>
+
+<section id="ukusi">
+	
+            <h2>Flavors</h2>
+
+        <div class="okvir">
+           <div class="ukusiArtikli">
+           		
+           		<div class="levi">
+               <article id="Cucumber" class="artikal" >
+               <div class="krug" id="slika1"></div>
+                   <h3>Cucumber / Lime / Mint</h3>
+                   <p>Purified Water, Organic Cucumber, Organic Lime, Organic Mint</p>
+                   <a href="https://squareup.com/market/swaywater">
+                   <div class="dugmeKupi">Order 12 Pack</div>
+                   </a>
+               </article>
+              
+               <article id="Lemon" class="artikal" >
+               	   <div class="krug" id="slika2"></div>
+                   <h3>Lemon / Ginger</h3>
+                   <p>Purified Water, Organic Lemon, Organic Orange, Organic Ginger</p>
+                   <a href="https://squareup.com/market/swaywater">
+                   <div class="dugmeKupi">Order 12 Pack</div>
+                   </a>
+               </article>
+               
+               </div>
+           		<div class="desni">
+              
+               <article id="Grape" class="artikal" >
+                   <div class="krug" id="slika3"></div>
+                   <h3>Grapefruit / Basil</h3>
+                   <p>Purified Water, Organic Grapefruit, Organic Basil</p>
+                   <a href="https://squareup.com/market/swaywater">
+                   <div class="dugmeKupi">Order 12 Pack</div>
+                   </a>
+               </article>
+               
+               
+               <article id="RotainFlavors" class="artikal" >
+                   <h3>Rotating Flavors</h3>
+                   <p>We're always working on new flavors to showcase the highest quality ingredients in season. Sign up for our newsletter to find out about new product releases!</p>
+                   <a class="ss-target" href="#newsletter">
+                       <div class="dugmeKupi">Newsletter Signup</div>
+                   </a>
+               </article>
+               </div>
+               
+           </div>
+        </div>
+
+</section>
+
+<div id="slikaPosleUkusa">
+<div id="tekstPosleUkusa">
+<h1>Fresh Organic Delicious</h1>
+</div>
+	
+</div>
+
+<section id="proces">
+                <h2>Our Process</h2>
+             <div class="okvir">
+                <div id="procesArtikli" >
+                <div class="levi">
+                    <article class="korak">
+                        <div class="broj">1</div>
+                        <h3>Pick</h3>
+                        <p>We pick the freshest organic fruit available at the peak of ripeness, committed to supporting local agriculture as much as we are able.</p>
+                    </article>
+
+                    <article class="korak">
+                        <div class="broj">3</div>
+                        <h3>Infuse</h3>
+                        <p>We infuse the fruit in our water for just the right amount of time to get the essence of the fruit. We do not add any syrups, chemicals or additives to our water.</p>
+                    </article>
+                 </div>
+
+                 <div class="desni">
+                    <article class="korak">
+                        <div class="broj">2</div>
+                        <h3>Purify</h3>
+                        <p>Our water is purified to eliminate any chemicals and minerals that can affect the taste, keeping our water delicious and refreshing.</p>
+                    </article>
+
+                    <article class="korak">
+                        <div class="broj">4</div>
+                        <h3>Bottle</h3>
+                        <p>Each bottle of Sway is bottled by hand without the use of machines. We also put positive words on the outside of the bottle to help put a little positive energy into the water.</p>
+                    </article>
+                    </div>
+                </div>
+             </div>
+            </section>
+
+            <section id="story">
+            	
+
+            	<h2>Our Story</h2>
+            	<div class="okvir">
+            	<div class="tekstStory">
+            	<p>Our founders Albert &amp; Sarah married in July of 2013 and headed to Canada for their honeymoon. As they wandered through Quebec City, they came upon a French bistro that served cucumber water. It was wonderfully refreshing and they stockpiled it in their water bottles for the rest of the trip. After they traveled back to Texas, they searched for something similar but there were simply no good options; so the idea for Sway was started.</p>
+            	</div>
+            	</div>
+
+            	<div class="okvir">
+
+            	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            		
+            		<div class="karusel">
+  						<div id="storyCarousel" class="carousel slide">
+   					
+   						 <div class="carousel-inner" role="listbox">
+
+      						<div class="item active">
+       							 <img src="./img/slide-bottles.jpg" >
+      						</div>
+
+      						<div class="item">
+       							 <img src="./img/slide-single.jpg" >
+      						</div>
+    
+      						<div class="item">
+       							 <img src="./img/slide-team.jpg">
+      						</div>
+
+  
+    					</div>
+    					      <ol class="carousel-indicators">
+      							<li class="item1 active"></li>
+      							<li class="item2"></li>
+     							<li class="item3"></li>
+   							 </ol>
+
+  
+  						</div>
+					</div>
+            	</div>
+
+            </section>
+
+
+            <section id="filozofija">
+            	
+              <div class="float_cl"></div>
+
+                <h2>Our Philosophy</h2>
+
+                <div class="flexOkvir">
+
+                <div class="prviBlok">
+
+                	<p class="citat">“We believe that we can build a successful company while maintaining our core principles of sustainability and philanthropy and inspiring other companies to do the same.”</p>
+                	<p class="citirani">Albert &amp; Sarah Swantner</p>
+                </div>
+
+                   <div class="pasusi">
+                    <div class="filozofijaPasus levi" >
+                        Our inspiration is the belief that we can make a difference in the world, that our commitment to whole fruits rather than the ‘essence’ creates a wholly different beverage than what exists currently.
+                    </div>
+                    
+                    <div class="filozofijaPasus desni" >
+                        We believe in taking care of our environment, from partnering with the <a href="http://www.theadventureproject.org/" target="_blank">The Adventure Project</a> to bring irrigation to developing countries, to our reusuable bottle program.
+                    </div>
+                
+                </div>
+          
+              
+              </div> 
+
+              <section id="obaveza">
+                <h2>Our Commitment</h2>
+                <div  class="tekst1Obaveza">
+                <p>For each bottle of Sway purchased, you will help a farmer irrigate one square foot of farmland in Kenya.</p>
+                </div>
+                <div id="fotografija">
+                    <img src="img/adventure-project.jpg">
+                    <div class="tekstFotografija">1 Sway Bottle Irrigates 1 SQ FT of Farmland</div>
+                    <p class="snimio">Photo by Esther Havens for The Adventure Project</p>
+                </div>
+
+                <div  class="tekst2Obaveza">
+                <p>We have partnered with The Adventure Project to help bring irrigation to farmers in Kenya. Irrigation helps make farm land more productive, reduces land clearing, and provides jobs and incomes to lift people out of poverty.</p>
+                </div>
+                <a href="http://theadventureproject.org" target="_blank"><div class="dugmeAdv">The Adventure Project Website</div></a>
+            </section>
+
+            
+            </section>
+
+            <section id="lokacije">
+            <h2>Where to Find Us</h2>
+            <div class="flexOkvir">
+            <div class="tekstLok">
+            <p>Thirsty? Get to the closest store near you. You can always get Sway delivered to your door.</p>
+            </div>
+
+           	<div class="mapaContainer">
+           `	<div id="mapa"></div>
+           	</div>
+
+           	<div id="listaLokacijaContainer">
+           	<h2>Locations</h2>
+           		
+           	</div>
+           		<div id="pomocni">
+                    <div id="drugeProdavnice" class="levi">
+                        <h2>Online Stores</h2>
+                        <ul class="onlineStores">
+                            <li><a href="https://squareup.com/market/swaywater" target="_blank">Sway Store</a></li>
+                            <li><a href="http://batchusa.com/pages/batch-austin" target="_blank">Batch Austin</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="skole" class="desni">
+                        <h2>Schools</h2>
+                        <p class="tekstSkole">Available in select middle and high schools in the Austin Independent School District!</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <section id="kontakt">
+        <h2>Contact</h2>
+        <p class="tekstKontakt">Have any questions about our product or want to sell Sway Water in your store? Don’t be a stranger!</p>
+
+            
+                <form class="forma" action="quform/process.php" method="post" enctype="multipart/form-data" onclick="">
+                  
+                             
+                                    <div class="ime  kontaktBox">
+                                        <input id="name" class="kontaktInput" type="text" name="name" placeholder="Name*">
+                                    </div>
+                              
+                           
+                           
+                               
+                                    <div class="kompanija  kontaktBox">
+                                        <input id="company" class="kontaktInput" type="text" name="company" placeholder="Company">
+                                    </div>
+                             
+                          
+                          
+                            
+                                    <div class="mail  kontaktBox">
+                                        <input id="email" class="kontaktInput" type="email" name="email" placeholder="Email*">
+                                    </div>
+                              
+                           
+                           
+                                    <div class="telefon  kontaktBox">
+                                        <input id="phone" class="kontaktInput" type="tel" name="phone" placeholder="Phone">
+                                    </div>
+                                
+                        
+                                    <div class="poruka  kontaktBoxVeliki">
+                                        <textarea id="message" name="message" style="height: 160px;" placeholder="I'd like to talk about...*"></textarea>
+                                    </div>
+                                
+                           
+                            
+                                <div class="submitForme">
+                                    <button type="submit" class="submitF" value="Send"><span><em>Send Message</em></span></button>
+                                </div>
+                            
+                       
+                </form>
+           
+        </section>
+
+        <footer>
+            <div id="novine">
+                <h4>Join our newsletter</h4>
+                <div class="novineTekst">
+                <p>Enter your email and be the first to know about special offers and events!</p>
+                </div>
+
+                <!--link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"-->
+
+                <div id="subscribeForm">
+                    <form action="//swaywater.us12.list-manage.com/subscribe/post?u=e5b9f45154ca069ce2fbfbb4f&amp;id=d56be68725" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+                            <input type="email" value="" name="EMAIL"  id="subEmail" placeholder="Enter your email" required="">
+
+                            <input type="submit" value="Subscribe" name="subscribe" id="subBt">
+
+                    </form>
+                </div>
+
+            </div>
+           <div class="pomocniDiv">
+            <div  class="donjiBlok">
+                <address class="levi">
+                    <h4>Sway Water</h4>
+                    <p>3200 Jones Rd <br>
+                    Sunset Valley, TX 78745 <br>
+                    +1 210 287 6477</p>
+                    <a href="mailto:info@swaywater.com">info@swaywater.com</a>
+                </address>
+
+                <div class="desni">
+                    <h4>Follow</h4>
+                    <div id="linkovi">
+                        <a href="https://www.facebook.com/swaywater" target="_blank">
+                            
+                       <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            
+                        </a>
+
+                        <a href="https://instagram.com/swaywater/" target="_blank">
+                             
+                                <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        </a>  
+
+                        <a href="https://twitter.com/swaywateratx" target="_blank">
+
+                                <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+
+                        </a>
+ 
+                    </div>
+                    <p>#swaythisway</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+		
+
+</body>
+<script type="text/javascript" src="swaywater.js"></script>
+
+</html>

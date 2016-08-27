@@ -1,0 +1,1190 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+@font-face {
+    font-family: "FontAwesome";
+    src: url(..\font\font-awesome-4.6.3\fonts\fontawesome-webfont.ttf);
+}
+
+
+
+/*body,
+.start,
+.pocetnaSlika,
+#pocetnaTekst,
+.zavesa,
+.nav,
+header*/
+*
+ {
+    margin: 0;
+    border:0;
+    padding: 0;
+    font-family: "Karla";
+}
+
+.start
+{
+    height: 100vh;
+}
+
+.pocetnaSlika {
+    left: 0%;
+    top:0vh;
+    z-index: 10;
+    width: 100%;
+    height: 120vh;
+    position: fixed;
+    background-size: cover;
+    background: url(./img/gb.jpg) no-repeat center center;
+    background-color: #FEDFC0;
+}
+
+.logo {
+    z-index: 50;
+    width: 286px;
+    height: 103px;
+    left: 50vw;
+    top: -50vh;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    background-size: 286px 103px;
+    background-image: url(./img/logo.png)
+    }
+
+.relative
+{
+   position: relative !important; 
+   top: -20vh;
+}
+
+.fixed
+{
+    position: fixed !important;  
+}
+
+#pocetnaTekst {
+    top: 32%;
+    opacity: 1;
+    width: 925px;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: 130px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in
+}
+
+
+@media only screen and (max-width: 992px)
+{
+#pocetnaTekst {
+    width: 760px;
+    font-size: 110px;
+}
+}
+
+.nevidljiv
+{
+    opacity:0 !important;
+}
+
+.displayNone
+{
+    display: none !important;
+}
+
+
+.zavesa {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 40px solid #C4EDEA;
+    background: url(./img/drip.svg) repeat;
+    background-size: 135px;
+    z-index: 20;
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+    .zavesa {
+        background-size: 120px;
+        border: 20px solid #C4EDEA
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .zavesa 
+    {
+        background-size: 120px;
+        border: 20px solid #C4EDEA
+    }
+
+    #pocetnaTekst 
+    {
+        top: 23%;
+        width: 460px;
+        font-size: 110px;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px) {
+    .zavesa {
+        background-size: 96px;
+        border: 22px solid #C4EDEA
+    }
+}
+#mobile_logo
+{
+    width: 100px;
+    height: 30px;
+    /*left: -65%;
+    top: 70%;*/
+    position: absolute;
+    transform: translate(-65vw,1vh);
+    background-size: 100px 30px;
+    background-repeat: no-repeat;
+    background-image: url(./img/logo.png);
+}
+
+#nav_mobile_menu_icon
+{
+    position: absolute;
+    transform: translate(-150%,60%);
+}
+
+
+
+#nav_mobile
+{
+    position: relative;
+    left:100%;
+    top:-23px;
+
+}
+
+#navUl_mobile
+{
+background-color: white;
+z-index: 999;
+width:100%;
+position: relative;
+top:30px;
+}
+
+#navUl_mobile li
+{
+    border-bottom: 1px solid grey ;
+    list-style-type: none;
+
+}
+
+#navUl_mobile li a
+{
+  font-size: 28px;
+  font-family: "Karla";
+  color: black;
+  text-decoration: none;
+}
+.widthFull
+{
+    width:100%;
+    padding:5% !important;
+}
+.nav_bar
+{   
+    width: 100%;
+    height: 8.5vh;
+    border: 0;
+    margin: 0;
+    position: relative;
+    padding-left: 20% ;
+    padding-right: 20%;
+    z-index: 25;
+    background-color: white;
+    padding-top: 1%;
+
+}
+
+.nav_top
+
+{
+   top: 118vh !important; 
+}
+
+.nav_top_fixed
+
+{
+    top:0vh !important; 
+
+}
+
+
+.nav_top_box
+
+{
+    
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in; 
+}
+
+
+
+.nav_bar #navUl 
+{
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+.nav_bar #navUl  li 
+{
+
+list-style-type: none;
+}
+
+.nav_bar > #navUl > li > a
+{
+    font-family: "Karla";
+    color: black;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav_bar ul li:hover {
+    border-bottom: 3px solid #222
+}
+
+.aktivan 
+{
+    border-bottom: 3px solid #222
+}
+
+.nav7 a
+{
+        color: #FF7A54 !important;
+}
+
+.nav7:hover
+{
+   border-bottom: 3px solid #FF7A54 !important;
+}
+
+.talasLimun
+
+{   
+    width: 70%;
+    left: 15%;
+    top: 100vh;
+    position: fixed;
+    z-index: 5;
+    border:1px solid black;
+}
+
+#talas
+{
+    animation-duration: 15s;
+    animation-name: talasiGD;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#talasSL
+{
+    width: 120px;
+}
+
+#limun
+{
+    position: relative;
+    left:85%;
+    animation-duration: 20s;
+    animation-name: limunTR;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+}
+
+.rotacija {
+
+    animation: rotacijaTL 20s infinite;
+}
+
+
+@keyframes talasiGD {
+    from {
+
+        transform: translate(0, 0)
+    }
+    65% {
+     
+        transform: translate(0, -80vh)
+    }
+   to {
+
+        transform: translate(0, 0)
+    }
+
+}
+
+@keyframes rotacijaTL {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes limunTR {
+    from {
+        transform: translate(0, 0px)
+    }
+    40% {
+        transform: translate(0, -80vh)
+    }
+    to {
+        transform: translate(0, 0px)
+    }
+}
+
+#opis
+{
+  position: relative;
+  top: 100vh; 
+  padding-left: 35vw;
+  padding-right: 35vw;
+  padding-top: 30vh;
+ 
+
+}
+
+
+.tekstOpisa
+{
+    text-align: center;
+    width: 30vw; 
+}
+
+/*.naslovOpisa
+{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 700;
+}*/
+
+.tekstOpisa
+{
+      
+    font-size: 1.8vw;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#ukusi
+{  
+ width: 100%; 
+  position: relative;
+  top: 120vh; 
+  text-align: center;
+
+}
+
+.okvir
+{   position: relative;
+    display:flex;
+    justify-content: center;
+    /*border:1px solid black;*/
+}
+
+.ukusiArtikli
+{
+  
+  /*border:1px solid black;*/
+  width:815px;
+ 
+}
+
+
+.ukusiArtikli li
+{
+    width:40%;
+    display:inline-block;
+}
+
+
+
+.artikal
+{   
+
+    width:401px;
+    height:565px;
+    text-align: center;
+    /*border:1px solid black; */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+
+}
+
+.levi
+{
+    float:left;
+    margin-right: .25vw;
+}
+.desni
+{
+    float:right;
+    margin-left: .25vh;
+}
+
+#Cucumber
+{
+
+    background: #E1F6B4 url(./img/shapes-bg-cuc.png) no-repeat -40px 0px;
+    background-size: 565px 400px;
+
+}
+
+#Lemon
+{
+    background: #F8F49E url(./img/shapes-bg-lem.png) no-repeat 0px 220px;
+    background-size: 360px 160px;
+}
+
+#Grape
+{
+    background: #FEDFC0 url(./img/shapes-bg-grape.png) no-repeat -80px 340px;
+    background-size: 557px 363px;
+}
+
+#RotainFlavors
+{
+    background: #DBE0D9 url(./img/shapes-bg-straw.png) no-repeat 60px 40px;
+    background-size: 556px 401px;
+}
+
+.krug
+{
+    width: 280px;
+    height: 280px;
+    border-radius: 140px;
+    margin: 40px auto 0 auto;
+}
+
+#slika1
+{
+    background: url(./img/product-cucumber.jpg) no-repeat -100px -30px;
+}
+
+#slika2
+{
+    background: url(./img/product-lemon.jpg) no-repeat -100px 0px
+}
+#slika3
+{
+    background: url(./img/product-grapefruit.jpg) no-repeat -60px -60px
+}
+
+article.artikal h3
+    {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 20px 0;
+    font-family: "Playfair Display",Georgia,serif;
+    }
+
+ article.artikal p   
+    {
+    width: 220px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    font-family: "Droid Sans Mono","Monaco","Lucida Console","Courier New",monospace;
+    text-transform: uppercase;
+    }
+
+    #RotainFlavors p
+    {
+    font-size: 17px;
+    text-transform: none;
+    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+.dugmeKupi
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px auto 0 auto;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    z-index: 20;
+    width: 200px;
+    position: relative;
+    margin-bottom: 40px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #29353A;
+} 
+
+
+
+article a
+{
+  text-decoration: none;
+  color: #29353A;  
+}
+
+article div.dugmeKupi:hover
+{
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: black;
+}
+
+#slikaPosleUkusa
+{   position: relative;
+    top:120vh;
+    width: 100%;
+    height: 125vh;
+    background-size: cover;
+    background: url(./img/flavors-hero.jpg) no-repeat center center;
+    background-color: #E1F6B4;
+    /*border:1px solid black;
+    display:flex;
+    justify-content: space-around; */
+}
+
+#tekstPosleUkusa
+{
+    width:65%;
+    position: relative;
+    top: 25%;
+    left:17%;
+}
+
+#slikaPosleUkusa h1
+{
+    text-align: center;
+    color: white;
+    line-height: 1;
+    font-size: 140px;
+    font-weight: 700;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+#proces
+{
+  width: 100%; 
+  position: relative;
+  top: 130vh; 
+  text-align: center;
+}
+
+#procesArtikli
+{
+    width:815px;
+    /*border:1px solid black;*/
+}
+
+article.korak
+{
+    width:400px;
+    height:400px;
+    /*border:1px solid black;*/
+    position: relative;
+}
+
+article.korak h3
+{
+    z-index:10;
+    font-weight: 700;
+    font-size: 85%;
+    text-transform: uppercase;
+    position: absolute;
+    left:45%;
+    top:30%;
+}
+
+article.korak p
+{
+    z-index:10; 
+    width:280px;
+    line-height: 200%;
+    position: absolute;
+    left:15%;
+    top:37%;
+
+   
+
+}
+
+.broj
+{
+    z-index: 1;
+    width: 34%;
+    left:8%;
+    padding: 60px 6%;
+    text-align: center;
+    position: relative;
+    color: #FEDFC0;
+    font-weight: 700;
+    font-size: 160px;
+    position: absolute;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+section h2
+{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 4;
+}
+
+#story
+{
+    width:100%;
+    position: relative;
+    top:140vh;
+}
+
+.tekstStory
+{
+    width:600px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.75;
+
+}
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 100%;
+      margin: 0;
+  }
+
+  .carousel-indicators
+  {
+    position: relative;
+    top:100%;
+    z-index: 9999;
+
+  }
+.carousel-indicators li {
+
+    width:12px !important;
+    height:12px !important;
+    border-radius: 40% !important;
+    background-color:grey !important;
+    color: grey !important;
+    margin: 6px !important;
+       
+}
+.carousel-indicators .active {
+    border-radius: 40% !important;
+    color: black !important;
+    background-color: black !important;
+    margin: 6px !important;
+}
+.karusel
+{   
+    position: relative;
+    top:10vh;
+    width:60%;
+}
+
+#filozofija
+
+{
+  width: 100%; 
+  position: relative;
+  top: 160vh; 
+  text-align: center;
+  display:block;
+}
+.prviBlok
+{
+    width:600px;
+    /*border:1px solid black;*/
+   
+}
+
+.citat
+{
+    
+    
+    text-align: center;
+    line-height: 2;
+    font-family: "Droid Sans Mono","Monaco","Lucida Console","Courier New",monospace;
+    font-size: 20px;
+}
+
+
+
+.citirani
+{
+  
+    width:400px;
+    text-align: center;
+    top:60%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pasusi
+{
+    /*border:1px solid black;*/
+    text-align: center;
+    width:65%;
+    margin: 10%;
+    
+}
+
+.float_cl {
+    clear: both;
+}
+
+.flexOkvir
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* border:1px solid black;*/
+}
+.filozofijaPasus
+{
+    width: 400px;
+    text-align: left;
+    line-height: 2;
+    font-size: 20px;
+}
+
+#obaveza
+
+{
+  width: 100%; 
+  position: relative;
+  text-align: center;
+  display:block;  
+}
+
+.tekst1Obaveza
+{
+    width: 460px;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+}
+.tekst2Obaveza
+{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#fotografija
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tekstFotografija
+{
+    width: 90%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: absolute;
+    /*left:20.5%;*/
+    top: 38%;
+    padding: 2% 2%;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border: 7px solid #fff;
+    text-transform: uppercase;
+    
+}
+
+.dugmeAdv
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px auto 0 auto;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    width: 320px;
+    line-height: 60px;
+    background-color: #FFF8BA;
+    text-decoration: none;
+    color: black;
+}
+.dugmeAdv:hover
+{
+  background-color: white; 
+  text-decoration: none; 
+}
+
+#lokacije
+{
+  width: 100%; 
+  position: relative;
+  top:160vh;
+  text-align: center;
+  display:block;  
+}
+.mapContainer
+{
+    width:100%;
+    height: 80vh;
+    border:1px solid black;
+}
+
+.listaLokacija
+{
+    text-align: left;
+    position: relative;
+    left:30%;
+    list-style-type: none;
+    font-size: 19px;
+}
+
+#map-canvas {
+    width:100%;
+    height:80vh;
+}
+
+.tekstLok
+{
+    width: 300px;
+}
+
+.onlineStores
+
+{
+    text-decoration: none; 
+    list-style-type: none;
+    text-align: left;
+    font-size: 19px;
+
+}
+
+.onlineStores li a
+{
+    color: black; 
+}
+
+#skole
+{
+  text-align: left !important;
+  width:400px;
+  /*border:1px solid black;*/
+  font-size: 19px;
+}
+
+#pomocni
+{
+    /*border:1px solid black;*/
+    width: 600px;
+}
+
+.tekstSkole
+{
+    position: relative;
+    left:40%;
+}
+
+#kontakt
+
+{
+  width: 100%; 
+  position: relative;
+  top:160vh;
+  text-align: center;
+  /*display:block; */
+  background: #DBE0D9; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.tekstKontakt
+{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.kontaktBox
+{
+    border:1px solid black;
+    width:430px;
+    height: 54px;
+    margin: 25px 0px 25px 0px;
+    text-align: left;
+    padding: 15px;
+    color: black !important;
+
+}
+
+.kontaktInput
+{
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    height:100%; 
+    background: #DBE0D9;
+    text-transform: uppercase;
+    color:black !important;
+    text-shadow: none;
+}
+
+.kontaktBox:hover,
+.kontaktInput:hover,
+.kontaktBoxVeliki:hover,
+#message:hover
+{
+  background: #FFF8BA;
+  transition: all 0.2s ease-in-out;
+}
+
+.kontaktBox:focus,
+.kontaktInput:focus,
+.kontaktBoxVeliki:focus,
+#message:focus
+{
+    outline: none;
+}
+
+
+.kontaktBoxVeliki
+{
+width:430px;
+border: 1px solid black;
+padding: 15px;
+}
+
+#message
+{
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    height:100%;
+    background: #DBE0D9;
+    text-transform: uppercase;
+    color:black !important;
+    text-shadow: none; 
+}
+.submitF
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px auto 0 auto;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    z-index: 20;
+    width: 200px;
+    position: relative;
+    margin-bottom: 40px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+.submitF:hover
+{
+   background-color: white; 
+   color: black;
+}
+
+footer
+{
+  width: 100%; 
+  position: relative;
+  top:160vh;
+  text-align: center;
+  /*display:block; */
+  background: #DBE0D9; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around; 
+  overflow: hidden;
+  padding-bottom: 100px;
+  background-color: #DDF3F7;
+}
+
+#novine
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pomocniDiv
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.donjiBlok
+{
+    width: 60%;
+    text-align: left;
+}
+
+#linkovi
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width:200px;
+}
+
+#novine h4
+{
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 20px;
+}
+
+#novine p
+
+{
+    
+    font-size: 17px;
+    line-height:1.5; 
+}
+
+.novineTekst
+{
+  width: 400px;  
+}
+
+
+
+.donjiBlok h4
+{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+footer p
+{
+    font-size: 17px;
+    line-height:1.5; 
+}
+
+address a
+{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #29353A;
+    text-decoration: none;
+    color: black;
+} 
+address a:focus,
+address a:hover
+{
+    text-decoration: none;
+    color: black; 
+}
+
+#linkovi p
+{
+    margin-top: 30%;
+}
+
+#linkovi i
+{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+#subscribeForm
+{
+    vertical-align: baseline;
+    padding-bottom: 50px;
+}
+
+#subEmail
+{
+    width: 220px;
+    height: 61px;
+    border: 1px solid black;
+    margin: 0px;
+    background-color: #DDF3F7;
+    padding-left: 20px;
+}
+
+#subBt
+{
+   width: 150px;
+   height: 61px;
+   border: 1px solid black; 
+   margin: 0px;
+   background-color: white;
+   float:right;
+}
+
+#subBt:hover
+{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
