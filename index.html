@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="swaywater.css">
 	<script src="jquery-3.1.0.min.js"></script>
 	
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="./js/bootstrap.min.js"></script>
  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMpLDBQHbtjOmfWtGu9POzaqfLcRHTlSc"></script>
  	<script src="https://use.fontawesome.com/63212357f7.js"></script>
 	
@@ -20,7 +20,7 @@
 <div class="zavesa"></div>
 <div class="logo"></div>
 <div class="pocetnaSlika">
-	<h1 id="pocetnaTekst">Water for the senses</h1>
+	<h1 class="pocetnaTekst">Water for the senses</h1>
 </div>
 </div>
 
@@ -44,13 +44,13 @@
             </div>
 
             <ul id="navUl_mobile">
-                <li class="nav1"><a href="#opis">Sway</a></li>
-                <li class="nav2"><a href="#ukusi">Flavors</a></li>
-                <li class="nav3"><a href="#proces">Process</a></li>
-                <li class="nav4"><a href="#story">About</a></li>
-                <li class="nav5"><a href="#lokacije">Locations</a></li>
-                <li class="nav6"><a href="#kontakt">Contact</a></li>
-                <li class="nav7"><a href="https://squareup.com/market/swaywater" target="_blank">Shop</a></li>
+                <li class="nav1 navLi_mobile"><a href="#opis">Sway</a></li>
+                <li class="nav2 navLi_mobile"><a href="#ukusi">Flavors</a></li>
+                <li class="nav3 navLi_mobile"><a href="#proces">Process</a></li>
+                <li class="nav4 navLi_mobile"><a href="#story">About</a></li>
+                <li class="nav5 navLi_mobile"><a href="#lokacije">Locations</a></li>
+                <li class="nav6 navLi_mobile"><a href="#kontakt">Contact</a></li>
+                <li class="nav7 navLi_mobile"><a href="https://squareup.com/market/swaywater" target="_blank">Shop</a></li>
             </ul>
         </nav>
 	
@@ -81,9 +81,9 @@
             <h2>Flavors</h2>
 
         <div class="okvir">
-           <div class="ukusiArtikli">
+           <div id="ukusiArtcl" class="ukusiArtikli">
            		
-           		<div class="levi">
+           		<div id="ukusiLevi" class="levi">
                <article id="Cucumber" class="artikal" >
                <div class="krug" id="slika1"></div>
                    <h3>Cucumber / Lime / Mint</h3>
@@ -103,7 +103,7 @@
                </article>
                
                </div>
-           		<div class="desni">
+           		<div id="ukusiDesni" class="desni">
               
                <article id="Grape" class="artikal" >
                    <div class="krug" id="slika3"></div>
@@ -131,7 +131,7 @@
 
 <div id="slikaPosleUkusa">
 <div id="tekstPosleUkusa">
-<h1>Fresh Organic Delicious</h1>
+<h1 class="pocetnaTekst">Fresh Organic Delicious</h1>
 </div>
 	
 </div>
@@ -140,7 +140,7 @@
                 <h2>Our Process</h2>
              <div class="okvir">
                 <div id="procesArtikli" >
-                <div class="levi">
+                <div id="procesLevi" class="levi">
                     <article class="korak">
                         <div class="broj">1</div>
                         <h3>Pick</h3>
@@ -154,7 +154,7 @@
                     </article>
                  </div>
 
-                 <div class="desni">
+                 <div id="procesDesni" class="desni">
                     <article class="korak">
                         <div class="broj">2</div>
                         <h3>Purify</h3>
@@ -183,7 +183,7 @@
 
             	<div class="okvir">
 
-            	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            	<link rel="stylesheet" href="./css/bootstrap.min.css">
             		
             		<div class="karusel">
   						<div id="storyCarousel" class="carousel slide">
@@ -226,18 +226,18 @@
 
                 <div class="flexOkvir">
 
-                <div class="prviBlok">
+                <div class="prviBlok flexOkvir" >
 
                 	<p class="citat">“We believe that we can build a successful company while maintaining our core principles of sustainability and philanthropy and inspiring other companies to do the same.”</p>
                 	<p class="citirani">Albert &amp; Sarah Swantner</p>
                 </div>
 
                    <div class="pasusi">
-                    <div class="filozofijaPasus levi" >
+                    <div id="filLevi" class="filozofijaPasus levi" >
                         Our inspiration is the belief that we can make a difference in the world, that our commitment to whole fruits rather than the ‘essence’ creates a wholly different beverage than what exists currently.
                     </div>
                     
-                    <div class="filozofijaPasus desni" >
+                    <div id="filDesni" class="filozofijaPasus desni" >
                         We believe in taking care of our environment, from partnering with the <a href="http://www.theadventureproject.org/" target="_blank">The Adventure Project</a> to bring irrigation to developing countries, to our reusuable bottle program.
                     </div>
                 

@@ -30,7 +30,7 @@ var p0 = ["p0",30.3095, -97.93937, "Bee Cave Coffee Co.", "<strong>Bee Cave Coff
 	 var r=255,g=255,b=255;
 	 document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 
-$("nav ul li a[href^='#']").on('click', function(e) 
+$(".nav_bar ul li a[href^='#']").on('click', function(e) 
 {
    e.preventDefault();
    var hash = this.hash;
@@ -40,6 +40,10 @@ $("nav ul li a[href^='#']").on('click', function(e)
        window.location.hash = hash;
      });
 });
+
+
+
+
 
 
 
@@ -231,6 +235,22 @@ if (sirina < 768)
 	$('.nav_bar').addClass('widthFull');
 	$('#nav_mobile').removeClass('displayNone');
     $('.nav_bar').addClass('widthFull');
+    $('#ukusiLevi').removeClass('levi');
+    $('#ukusiDesni').removeClass('desni');
+    $('#ukusiArtcl').addClass('flexCentarUspravno');
+
+    $('#procesLevi').removeClass('levi');
+    $('#procesDesni').removeClass('desni');
+    $('#procesArtikli').addClass('flexCentarUspravno');
+
+    $('#filLevi').removeClass('levi');
+    $('#filDesni').removeClass('desni');
+    $('.pasusi').addClass('flexCentarUspravno');
+    $('#filLevi').removeClass('filozofijaPasus');
+    $('#filDesni').removeClass('filozofijaPasus');
+    $('#filLevi').addClass('filozofijaPasus_mob');
+    $('#filDesni').addClass('filozofijaPasus_mob');
+    $('.citat').addClass('filozofijaPasus_mob');
 }
 else 
 
@@ -239,6 +259,23 @@ else
 	$('#navUl_mobile').addClass('displayNone');
 	$('#navUl').removeClass('displayNone');
 	$('.nav_bar').removeClass('widthFull');
+	$('#ukusiLevi').addClass('levi');
+    $('#ukusiDesni').addClass('desni');
+    $('#ukusiArtcl').removeClass('flexCentarUspravno');
+
+    $('#procesLevi').addClass('levi');
+    $('#procesDesni').addClass('desni');
+    $('#procesArtikli').removeClass('flexCentarUspravno');
+
+     $('#filLevi').addClass('levi');
+    $('#filDesni').addClass('desni');
+    $('.pasusi').removeClass('flexCentarUspravno');
+     $('#filLevi').addClass('filozofijaPasus');
+    $('#filDesni').addClass('filozofijaPasus');
+    $('#filLevi').removeClass('filozofijaPasus_mob');
+    $('#filDesni').removeClass('filozofijaPasus_mob');
+    $('.citat').removeClass('filozofijaPasus_mob');
+
 }
 
 
@@ -253,6 +290,12 @@ function navMobileMenuClick(e)
 	ncl.toggleClass('displayNone');
 
 }
+
+$('.navLi_mobile').on('click',function(e)
+{
+	var ncl = $('#navUl_mobile');
+	ncl.toggleClass('displayNone');
+});
 
 
 
