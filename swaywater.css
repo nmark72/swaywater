@@ -68,7 +68,11 @@ header*/
 
 .fixed
 {
-    position: fixed !important;  
+   -webkit-position: fixed !important; 
+    -moz-position: fixed !important;  
+    -ms-position: fixed !important; 
+    -o-position: fixed !important; 
+    position: fixed !important; 
 }
 
 .pocetnaTekst {
