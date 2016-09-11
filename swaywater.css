@@ -142,12 +142,39 @@ header*/
 
     .pocetnaTekst 
     {
-        top: 23%;
+        top: 19%;
         width: 460px;
-        font-size: 110px;
+        font-size: 95px;
     }
 
+    .donjiBlok 
+    {
+    width: 60%;
+    text-align: center !important;
+    }
 
+  .HiResDesni
+  {
+    text-align: center;
+  }
+
+  #linkovi
+  {
+    margin: 0 auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px)
+
+{
+   .pocetnaTekst 
+    {
+        top: 15%;
+        width: 400px;
+        font-size: 80px;
+    }  
 }
 
 @media only screen and (max-width: 468px) {
@@ -156,13 +183,22 @@ header*/
         border: 22px solid #C4EDEA
     }
 
-       .pocetnaTekst 
+  .pocetnaTekst 
     {
-        top: 23%;
-        width: 440px;
-        font-size: 90px;
+        top: 15%;
+        width: 300px;
+        font-size: 50px;
     }
+
+.tekstFotografija
+{
+    border:0 !important;
 }
+
+
+}
+
+ 
 #mobile_logo
 {
     width: 100px;
@@ -170,6 +206,10 @@ header*/
     /*left: -65%;
     top: 70%;*/
     position: absolute;
+    -webkit-transform: translate(-65vw,1vh);
+    -moz-transform: translate(-65vw,1vh);
+    -ms-transform: translate(-65vw,1vh);
+    -o-transform: translate(-65vw,1vh);
     transform: translate(-65vw,1vh);
     background-size: 100px 30px;
     background-repeat: no-repeat;
@@ -179,6 +219,10 @@ header*/
 #nav_mobile_menu_icon
 {
     position: absolute;
+    -webkit-transform: translate(-150%,60%);
+    -moz-transform: translate(-150%,60%);
+    -ms-transform: translate(-150%,60%);
+    -o-transform: translate(-150%,60%);
     transform: translate(-150%,60%);
 }
 
@@ -594,10 +638,12 @@ article div.dugmeKupi:hover
 
 #tekstPosleUkusa
 {
-    width:65%;
+    width: 65%;
     position: relative;
     top: 25%;
-    left:17%;
+    /* left: 17%; */
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*#slikaPosleUkusa h1

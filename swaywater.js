@@ -17,6 +17,8 @@ tekstOpisa = $('<p></p>'),
 ukusi= $('<selection></selection>'),
 scroll=0,
 sirina=Number($(window).width());;
+
+
 var p0 = ["p0",30.3095, -97.93937, "Bee Cave Coffee Co.", "<strong>Bee Cave Coffee Co.</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/cBdxQXPvk1R2' target='_blank'>Directions</a>"],
 	p1 = ["p1",30.38707, -97.70366, "Bee Cave Coffee Co. Domain", "<strong>Bee Cave Coffee Co. Domain</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/V2fBw8iUu4G2' target='_blank'>Directions</a>"],
     p2 = ["p2",30.307743, -97.739877, "Central Market Austin North Lamar", "<strong>Central Market Austin North Lamar</strong><br><a href='http://centralmarket.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/3Wdp74k23Nv' target='_blank'>Directions</a>"],
@@ -235,22 +237,16 @@ if (sirina < 768)
 	$('.nav_bar').addClass('widthFull');
 	$('#nav_mobile').removeClass('displayNone');
     $('.nav_bar').addClass('widthFull');
-    $('#ukusiLevi').removeClass('levi');
-    $('#ukusiDesni').removeClass('desni');
     $('#ukusiArtcl').addClass('flexCentarUspravno');
-
-    $('#procesLevi').removeClass('levi');
-    $('#procesDesni').removeClass('desni');
     $('#procesArtikli').addClass('flexCentarUspravno');
-
-    $('#filLevi').removeClass('levi');
-    $('#filDesni').removeClass('desni');
     $('.pasusi').addClass('flexCentarUspravno');
     $('#filLevi').removeClass('filozofijaPasus');
     $('#filDesni').removeClass('filozofijaPasus');
     $('#filLevi').addClass('filozofijaPasus_mob');
     $('#filDesni').addClass('filozofijaPasus_mob');
     $('.citat').addClass('filozofijaPasus_mob');
+    $('.HiResLevi').removeClass('levi');
+    $('.HiResDesni').removeClass('desni');
 }
 else 
 
@@ -259,22 +255,16 @@ else
 	$('#navUl_mobile').addClass('displayNone');
 	$('#navUl').removeClass('displayNone');
 	$('.nav_bar').removeClass('widthFull');
-	$('#ukusiLevi').addClass('levi');
-    $('#ukusiDesni').addClass('desni');
     $('#ukusiArtcl').removeClass('flexCentarUspravno');
-
-    $('#procesLevi').addClass('levi');
-    $('#procesDesni').addClass('desni');
     $('#procesArtikli').removeClass('flexCentarUspravno');
-
-     $('#filLevi').addClass('levi');
-    $('#filDesni').addClass('desni');
     $('.pasusi').removeClass('flexCentarUspravno');
      $('#filLevi').addClass('filozofijaPasus');
     $('#filDesni').addClass('filozofijaPasus');
     $('#filLevi').removeClass('filozofijaPasus_mob');
     $('#filDesni').removeClass('filozofijaPasus_mob');
     $('.citat').removeClass('filozofijaPasus_mob');
+    $('.HiResLevi').addClass('levi');
+    $('.HiResDesni').addClass('desni');
 
 }
 
