@@ -16,7 +16,10 @@ naslovOpisa = $('<h2></h2>'),
 tekstOpisa = $('<p></p>'),
 ukusi= $('<selection></selection>'),
 scroll=0,
-sirina=Number($(window).width());;
+sirina=Number($(window).width());
+
+responsive(sirina);
+$('body').width($(window).width());
 
 
 var p0 = ["p0",30.3095, -97.93937, "Bee Cave Coffee Co.", "<strong>Bee Cave Coffee Co.</strong><br><a href='http://beecavecoffee.com' target='_blank'>Website</a> <span class='map-bull'>&bull;</span> <a href='https://goo.gl/maps/cBdxQXPvk1R2' target='_blank'>Directions</a>"],
@@ -49,13 +52,14 @@ $(".nav_bar ul li a[href^='#']").on('click', function(e)
 
 
 
-if (scroll < 450)
-{$("#pocetnaTekst").addClass('nevidljiv');}
+if (scroll < 416)
+{$(".pocetnaTekst").addClass('nevidljiv');
+console.log("pocetnaTekst nevidljiv")}
 
 $(window).scroll(function (event) {
  scroll = Number($(window).scrollTop());
- //console.log(scroll);
-
+ console.log(scroll);
+$('body').width($(window).width());
  /*---pocetnaSlikaFiksnaRelativna---*/
 
   if (scroll > 625)
@@ -71,11 +75,11 @@ else
 
  /*---pocetnaTekstVidljivost---*/
  if (scroll > 400)
- 	{$("#pocetnaTekst").removeClass('nevidljiv');
+ 	{$(".pocetnaTekst").removeClass('nevidljiv');
 //console.log("vece od 450");
 }
 else
-	{$("#pocetnaTekst").addClass('nevidljiv');}
+	{$(".pocetnaTekst").addClass('nevidljiv');}
 //console.log(scroll);
 /*----------------------------------------*/
 
@@ -211,28 +215,11 @@ document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
  	return green;
  }
 
-
-
-$('#navUl_mobile').addClass('displayNone');
-
-if (sirina > 768)
-{   
-$('#nav_mobile').addClass('displayNone');
-
-}
-else
-{
-	$('#navUl').addClass('displayNone');
-	$('.nav_bar').addClass('widthFull');
-}
-
-
-window.onresize=function(event) {
-sirina = Number($(window).width());
-//console.log(sirina);
-
-if (sirina < 768)
-{   
+ function responsive(sir)
+ {
+ 	if (sir < 822)
+{ 
+    console.log("responsive "+sir);  
 	$('#navUl').addClass('displayNone');
 	$('.nav_bar').addClass('widthFull');
 	$('#nav_mobile').removeClass('displayNone');
@@ -267,6 +254,31 @@ else
     $('.HiResDesni').addClass('desni');
 
 }
+ }
+
+
+
+$('#navUl_mobile').addClass('displayNone');
+
+if (sirina > 822)
+{   
+$('#nav_mobile').addClass('displayNone');
+
+}
+else
+{
+	$('#navUl').addClass('displayNone');
+	$('.nav_bar').addClass('widthFull');
+}
+
+
+window.onresize=function(event) {
+sirina = Number($(window).width());
+
+$('body').width($(window).width());
+//console.log(sirina);
+
+responsive(sirina);
 
 
 };

@@ -25,6 +25,11 @@ header*/
     font-family: "Karla";
 }
 
+nav
+{
+    width: 100%;
+}
+
 .start
 {
     height: 100vh;
@@ -78,7 +83,7 @@ header*/
 .pocetnaTekst {
     top: 32%;
     opacity: 1;
-    width: 925px;
+    width: 60vw;
     color: #fff;
     margin: 0 auto;
     line-height: 1;
@@ -133,7 +138,7 @@ header*/
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 821px) {
     .zavesa 
     {
         background-size: 120px;
@@ -196,6 +201,25 @@ header*/
 }
 
 
+
+#subscribeForm form
+{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+#submitFooter
+{
+    margin: 0 auto;
+}
+
+#kontakt form div
+{
+    width: auto;
+    min-width: 280px !important;
+}
+
 }
 
  
@@ -203,27 +227,21 @@ header*/
 {
     width: 100px;
     height: 30px;
-    /*left: -65%;
-    top: 70%;*/
-    position: absolute;
-    -webkit-transform: translate(-65vw,1vh);
+    position: relative;
+    z-index: 50;
     -moz-transform: translate(-65vw,1vh);
     -ms-transform: translate(-65vw,1vh);
     -o-transform: translate(-65vw,1vh);
-    transform: translate(-65vw,1vh);
     background-size: 100px 30px;
-    background-repeat: no-repeat;
     background-image: url(./img/logo.png);
+    margin: 10px auto;
 }
 
 #nav_mobile_menu_icon
 {
     position: absolute;
-    -webkit-transform: translate(-150%,60%);
-    -moz-transform: translate(-150%,60%);
-    -ms-transform: translate(-150%,60%);
-    -o-transform: translate(-150%,60%);
-    transform: translate(-150%,60%);
+    right: 2vw;
+    top: -1px;
 }
 
 
@@ -231,7 +249,7 @@ header*/
 #nav_mobile
 {
     position: relative;
-    left:100%;
+    width:100%;
     top:-23px;
 
 }
@@ -242,7 +260,7 @@ background-color: white;
 z-index: 999;
 width:100%;
 position: relative;
-top:30px;
+top:-10px;
 }
 
 #navUl_mobile li
@@ -365,6 +383,7 @@ list-style-type: none;
     animation-name: talasiGD;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width:120px;
 }
 #talasSL
 {
@@ -378,7 +397,9 @@ list-style-type: none;
     animation-duration: 20s;
     animation-name: limunTR;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
+    animation-timing-function: ease-in-out;
+    width:150px;
+    margin: 0;
 }
 
 .rotacija {
@@ -866,7 +887,7 @@ section h2
 
 .tekst1Obaveza
 {
-    width: 460px;
+    width: 70%;
     margin: 0 auto;
     font-size: 28px;
     line-height: 1.5;
@@ -874,7 +895,7 @@ section h2
 }
 .tekst2Obaveza
 {
-    width: 600px;
+    width: 70%;
     margin: 0 auto;
     font-size: 26px;
     line-height: 1.5;
@@ -971,6 +992,7 @@ section h2
     list-style-type: none;
     text-align: left;
     font-size: 19px;
+    width:170px;
 
 }
 
@@ -990,7 +1012,9 @@ section h2
 #pomocni
 {
     /*border:1px solid black;*/
-    width: 600px;
+    width: 80%;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .tekstSkole
@@ -1021,9 +1045,14 @@ section h2
   align-content: space-around;
 }
 
+#tekstKontakt
+{
+    width: 80%;
+}
+
 .tekstKontakt
 {
-    width: 600px;
+    
     margin: 0 auto;
     font-size: 24px;
     line-height: 1.5;
@@ -1133,6 +1162,17 @@ footer
   background-color: #DDF3F7;
 }
 
+.onlineStores h2
+{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 4;
+}
+
 #novine
 {
     width:100%;
@@ -1190,6 +1230,13 @@ footer
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 20px;
+}
+
+#subscribeForm form
+{
+    display: inline-flex;
+    flex-direction: row;
+    
 }
 
 footer p
