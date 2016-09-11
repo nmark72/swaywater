@@ -196,6 +196,25 @@ header*/
 }
 
 
+
+#subscribeForm form
+{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+#submitFooter
+{
+    margin: 0 auto;
+}
+
+#kontakt form div
+{
+    width: auto;
+    min-width: 280px !important;
+}
+
 }
 
  
@@ -971,6 +990,7 @@ section h2
     list-style-type: none;
     text-align: left;
     font-size: 19px;
+    width:170px;
 
 }
 
@@ -990,7 +1010,9 @@ section h2
 #pomocni
 {
     /*border:1px solid black;*/
-    width: 600px;
+    width: 80%;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .tekstSkole
@@ -1133,6 +1155,17 @@ footer
   background-color: #DDF3F7;
 }
 
+.onlineStores h2
+{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 4;
+}
+
 #novine
 {
     width:100%;
@@ -1190,6 +1223,13 @@ footer
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 20px;
+}
+
+#subscribeForm form
+{
+    display: inline-flex;
+    flex-direction: row;
+    
 }
 
 footer p
